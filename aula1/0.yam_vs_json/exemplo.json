@@ -1,0 +1,13 @@
+{
+  "Name": "Nilson Cunha",
+  "Country": "BR",
+  "Sports": [
+    "Football",
+    "Running",
+    "Walking"
+  ],
+  "Address": {
+    "Street": "R. Das Quantas",
+    "House": "Flat que cê queira"
+  }
+}

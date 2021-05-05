@@ -1,0 +1,22 @@
+Description: Cria bucket no S3
+
+Resources:
+  BucketCloudFormation:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: bucket-cloud-formation-aws-bootcamp
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: True
+        BlockPublicPolicy: True
+        IgnorePublicAcls: True
+        RestrictPublicBuckets: True
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AWS256
+
+
+  Bucket2CloudFormation:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: bucket2-cloud-formation-aws-bootcamp
